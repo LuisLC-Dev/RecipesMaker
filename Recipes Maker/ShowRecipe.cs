@@ -16,5 +16,10 @@ namespace Recipes_Maker
         {
             InitializeComponent();
         }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

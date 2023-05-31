@@ -31,12 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.nupQuantity = new System.Windows.Forms.NumericUpDown();
+            this.cbCategory = new System.Windows.Forms.ComboBox();
+            this.cbIngredient = new System.Windows.Forms.ComboBox();
+            this.accetpButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.nupQuantity)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -66,63 +66,65 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Cantidad:";
             // 
-            // numericUpDown1
+            // nupQuantity
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(28, 134);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 23);
-            this.numericUpDown1.TabIndex = 3;
+            this.nupQuantity.Location = new System.Drawing.Point(28, 134);
+            this.nupQuantity.Name = "nupQuantity";
+            this.nupQuantity.Size = new System.Drawing.Size(120, 23);
+            this.nupQuantity.TabIndex = 3;
             // 
-            // comboBox1
+            // cbCategory
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(27, 44);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 23);
-            this.comboBox1.TabIndex = 4;
+            this.cbCategory.FormattingEnabled = true;
+            this.cbCategory.Location = new System.Drawing.Point(27, 44);
+            this.cbCategory.Name = "cbCategory";
+            this.cbCategory.Size = new System.Drawing.Size(121, 23);
+            this.cbCategory.TabIndex = 4;
             // 
-            // comboBox2
+            // cbIngredient
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(27, 90);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 23);
-            this.comboBox2.TabIndex = 5;
+            this.cbIngredient.FormattingEnabled = true;
+            this.cbIngredient.Location = new System.Drawing.Point(27, 90);
+            this.cbIngredient.Name = "cbIngredient";
+            this.cbIngredient.Size = new System.Drawing.Size(121, 23);
+            this.cbIngredient.TabIndex = 5;
             // 
-            // button1
+            // accetpButton
             // 
-            this.button1.Location = new System.Drawing.Point(12, 175);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Aceptar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.accetpButton.Location = new System.Drawing.Point(12, 175);
+            this.accetpButton.Name = "accetpButton";
+            this.accetpButton.Size = new System.Drawing.Size(75, 23);
+            this.accetpButton.TabIndex = 6;
+            this.accetpButton.Text = "Aceptar";
+            this.accetpButton.UseVisualStyleBackColor = true;
+            this.accetpButton.Click += new System.EventHandler(this.accetpButton_Click);
             // 
-            // button2
+            // cancelButton
             // 
-            this.button2.Location = new System.Drawing.Point(93, 175);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.cancelButton.Location = new System.Drawing.Point(93, 175);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.TabIndex = 7;
+            this.cancelButton.Text = "Cancelar";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // Add_EditIngredient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(185, 215);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.accetpButton);
+            this.Controls.Add(this.cbIngredient);
+            this.Controls.Add(this.cbCategory);
+            this.Controls.Add(this.nupQuantity);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Add_EditIngredient";
             this.Text = "Add_EditIngredient";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupQuantity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,10 +135,10 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private NumericUpDown numericUpDown1;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private Button button1;
-        private Button button2;
+        private NumericUpDown nupQuantity;
+        private ComboBox cbCategory;
+        private ComboBox cbIngredient;
+        private Button accetpButton;
+        private Button cancelButton;
     }
 }

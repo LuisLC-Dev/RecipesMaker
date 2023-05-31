@@ -35,10 +35,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.closeButton = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
+            this.editButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -108,14 +108,15 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Instrucciones de la receta";
             // 
-            // button1
+            // closeButton
             // 
-            this.button1.Location = new System.Drawing.Point(677, 556);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Cerrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.closeButton.Location = new System.Drawing.Point(677, 556);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(75, 23);
+            this.closeButton.TabIndex = 7;
+            this.closeButton.Text = "Cerrar";
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // menuStrip1
             // 
@@ -126,32 +127,32 @@
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // button2
+            // deleteButton
             // 
-            this.button2.Location = new System.Drawing.Point(677, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Borrar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.deleteButton.Location = new System.Drawing.Point(677, 12);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(75, 23);
+            this.deleteButton.TabIndex = 9;
+            this.deleteButton.Text = "Borrar";
+            this.deleteButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // editButton
             // 
-            this.button3.Location = new System.Drawing.Point(596, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Editar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.editButton.Location = new System.Drawing.Point(596, 12);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(75, 23);
+            this.editButton.TabIndex = 10;
+            this.editButton.Text = "Editar";
+            this.editButton.UseVisualStyleBackColor = true;
             // 
             // ShowRecipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(775, 591);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.editButton);
+            this.Controls.Add(this.deleteButton);
+            this.Controls.Add(this.closeButton);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -176,9 +177,9 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private Button button1;
+        private Button closeButton;
         private MenuStrip menuStrip1;
-        private Button button2;
-        private Button button3;
+        private Button deleteButton;
+        private Button editButton;
     }
 }

@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.editButton = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -65,14 +65,16 @@
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // editButton
             // 
-            this.button2.Location = new System.Drawing.Point(152, 378);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.editButton.Location = new System.Drawing.Point(152, 378);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(75, 23);
+            this.editButton.TabIndex = 9;
+            this.editButton.Text = "Editar";
+            this.editButton.UseVisualStyleBackColor = true;
+            this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
             // button3
             // 
@@ -109,7 +111,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.editButton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
@@ -126,7 +128,7 @@
         private Label label1;
         private DataGridView dataGridView1;
         private Button button1;
-        private Button button2;
+        private Button editButton;
         private Button button3;
         private Button button4;
         private Button button5;

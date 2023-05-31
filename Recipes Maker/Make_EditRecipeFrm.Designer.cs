@@ -30,14 +30,14 @@
         {
             this.saveButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbRecipeName = new System.Windows.Forms.TextBox();
+            this.tbDescription = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbIngredients = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbInstructions = new System.Windows.Forms.TextBox();
             this.editIngredientsButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -49,6 +49,7 @@
             this.saveButton.TabIndex = 0;
             this.saveButton.Text = "Guardar";
             this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // cancelButton
             // 
@@ -58,21 +59,22 @@
             this.cancelButton.TabIndex = 1;
             this.cancelButton.Text = "Cancelar";
             this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
-            // textBox1
+            // tbRecipeName
             // 
-            this.textBox1.Location = new System.Drawing.Point(178, 81);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(472, 23);
-            this.textBox1.TabIndex = 2;
+            this.tbRecipeName.Location = new System.Drawing.Point(178, 81);
+            this.tbRecipeName.Name = "tbRecipeName";
+            this.tbRecipeName.Size = new System.Drawing.Size(472, 23);
+            this.tbRecipeName.TabIndex = 2;
             // 
-            // textBox2
+            // tbDescription
             // 
-            this.textBox2.Location = new System.Drawing.Point(178, 120);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(472, 69);
-            this.textBox2.TabIndex = 3;
+            this.tbDescription.Location = new System.Drawing.Point(178, 120);
+            this.tbDescription.Multiline = true;
+            this.tbDescription.Name = "tbDescription";
+            this.tbDescription.Size = new System.Drawing.Size(472, 69);
+            this.tbDescription.TabIndex = 3;
             // 
             // label1
             // 
@@ -92,14 +94,14 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Descripción:";
             // 
-            // textBox3
+            // tbIngredients
             // 
-            this.textBox3.Location = new System.Drawing.Point(178, 198);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(472, 78);
-            this.textBox3.TabIndex = 6;
+            this.tbIngredients.Location = new System.Drawing.Point(178, 198);
+            this.tbIngredients.Multiline = true;
+            this.tbIngredients.Name = "tbIngredients";
+            this.tbIngredients.ReadOnly = true;
+            this.tbIngredients.Size = new System.Drawing.Size(472, 78);
+            this.tbIngredients.TabIndex = 6;
             // 
             // label3
             // 
@@ -119,13 +121,13 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Instrucciones:";
             // 
-            // textBox4
+            // tbInstructions
             // 
-            this.textBox4.Location = new System.Drawing.Point(178, 311);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(472, 102);
-            this.textBox4.TabIndex = 9;
+            this.tbInstructions.Location = new System.Drawing.Point(178, 311);
+            this.tbInstructions.Multiline = true;
+            this.tbInstructions.Name = "tbInstructions";
+            this.tbInstructions.Size = new System.Drawing.Size(472, 102);
+            this.tbInstructions.TabIndex = 9;
             // 
             // editIngredientsButton
             // 
@@ -143,14 +145,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(756, 511);
             this.Controls.Add(this.editIngredientsButton);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tbInstructions);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbIngredients);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbDescription);
+            this.Controls.Add(this.tbRecipeName);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.saveButton);
             this.Name = "Make_EditRecipeFrm";
@@ -164,14 +166,14 @@
 
         private Button saveButton;
         private Button cancelButton;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox tbRecipeName;
+        private TextBox tbDescription;
         private Label label1;
         private Label label2;
-        private TextBox textBox3;
+        private TextBox tbIngredients;
         private Label label3;
         private Label label4;
-        private TextBox textBox4;
+        private TextBox tbInstructions;
         private Button editIngredientsButton;
     }
 }

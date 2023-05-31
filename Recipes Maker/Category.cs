@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Recipes_Maker
 {
-    internal class Category
+    public class Category
     {
         private string name;
         private List<Ingredient> ingredients;

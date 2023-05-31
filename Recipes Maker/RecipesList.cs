@@ -12,6 +12,7 @@ namespace Recipes_Maker
 {
     public partial class RecipesList : Form
     {
+        List<Recipe> recipes = new List<Recipe>();
         public RecipesList()
         {
             InitializeComponent();
