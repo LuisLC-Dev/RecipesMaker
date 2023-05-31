@@ -13,13 +13,14 @@ namespace Recipes_Maker
 {
     public partial class Add_EditIngredient : Form
     {
+        List<Category> categories = new List<Category>();
         private Ingredient ingredient;
         private int quantity;
         private bool response;
         public Add_EditIngredient()
         {
             InitializeComponent();
-            LoadCombos();
+            LoadComboBox();
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
@@ -43,11 +44,10 @@ namespace Recipes_Maker
             }
         }
 
-        private void LoadCombos()
+        private void LoadComboBox()
         {
-            MessageBox.Show(Environment.CurrentDirectory + "\\data\\categories.json");
             string fileJson = File.ReadAllText(@Environment.CurrentDirectory + "\\data\\categories.json");
-            List<Category> categories = (List<Category>)JsonConvert.DeserializeObject(fileJson, typeof(List<Category>));
+            categories = (List<Category>)JsonConvert.DeserializeObject(fileJson, typeof(List<Category>));
             foreach(Category c in categories)
             {
                 cbCategory.Items.Add(c.GetName());
@@ -81,5 +81,14 @@ namespace Recipes_Maker
             return this.quantity;
         }
         #endregion
+
+        private void cbCategory_TextChanged(object sender, EventArgs e)
+        {
+            cbIngredient.Items.Clear();
+            foreach(Ingredient i in categories[cbCategory.SelectedIndex].GetIngredients())
+            {
+                cbIngredient.Items.Add(i.GetIngredientName());
+            }
+        }
     }
 }

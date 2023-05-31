@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgIngredients = new System.Windows.Forms.DataGridView();
             this.addButton = new System.Windows.Forms.Button();
             this.editButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgIngredients)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -47,14 +47,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ingredientes:";
             // 
-            // dataGridView1
+            // dgIngredients
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 74);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(296, 298);
-            this.dataGridView1.TabIndex = 7;
+            this.dgIngredients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgIngredients.Location = new System.Drawing.Point(12, 74);
+            this.dgIngredients.Name = "dgIngredients";
+            this.dgIngredients.RowTemplate.Height = 25;
+            this.dgIngredients.Size = new System.Drawing.Size(296, 298);
+            this.dgIngredients.TabIndex = 7;
             // 
             // addButton
             // 
@@ -116,11 +116,11 @@
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.addButton);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgIngredients);
             this.Controls.Add(this.label1);
             this.Name = "EditIngredientsFrm";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgIngredients)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,7 +129,7 @@
         #endregion
 
         private Label label1;
-        private DataGridView dataGridView1;
+        private DataGridView dgIngredients;
         private Button addButton;
         private Button editButton;
         private Button deleteButton;

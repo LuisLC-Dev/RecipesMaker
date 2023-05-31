@@ -12,6 +12,7 @@ namespace Recipes_Maker
 {
     public partial class EditIngredientsFrm : Form
     {
+        private List<int> quantities = new List<int>();
         private List<Ingredient> ingredients = new List<Ingredient>();
         private bool response;
         public EditIngredientsFrm()
@@ -22,6 +23,8 @@ namespace Recipes_Maker
         private void editButton_Click(object sender, EventArgs e)
         {
             Add_EditIngredient add_EditIngredient = new Add_EditIngredient();
+            add_EditIngredient.SetIngredient(ingredients[dgIngredients.CurrentRow.Index]);
+            add_EditIngredient.SetQuantity(quantities[dgIngredients.CurrentRow.Index]);
             add_EditIngredient.ShowDialog();
         }
 
@@ -29,6 +32,31 @@ namespace Recipes_Maker
         {
             Add_EditIngredient add_EditIngredient = new Add_EditIngredient();
             add_EditIngredient.ShowDialog();
+            if (add_EditIngredient.GetResponse())
+            {
+                ingredients.Add(add_EditIngredient.GetIngredient());
+                quantities.Add(add_EditIngredient.GetQuantity());
+            }
+            DataGridViewCell template = new DataGridViewTextBoxCell();
+            dgIngredients.Columns.Clear();
+            DataGridViewColumn quantitiesColumn = new DataGridViewColumn();
+            quantitiesColumn.Name = "quantity";
+            quantitiesColumn.HeaderText = "Cantidad";
+            quantitiesColumn.CellTemplate = template;
+            dgIngredients.Columns.Add(quantitiesColumn);
+            DataGridViewColumn ingredientsColumn = new DataGridViewColumn();
+            ingredientsColumn.Name = "ingredient";
+            ingredientsColumn.HeaderText = "Ingrediente";
+            ingredientsColumn.CellTemplate = template;
+            dgIngredients.Columns.Add(ingredientsColumn);
+            for(int i = 0; i < ingredients.Count(); i++)
+            {
+                DataGridViewRow r = new DataGridViewRow();
+                r.CreateCells(dgIngredients);
+                r.Cells[0].Value = quantities[i].ToString();
+                r.Cells[1].Value = ingredients[i].GetIngredientName();
+                dgIngredients.Rows.Add(r);
+            }
         }
 
         #region setters

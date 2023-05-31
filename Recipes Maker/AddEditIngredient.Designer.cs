@@ -80,6 +80,7 @@
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(121, 23);
             this.cbCategory.TabIndex = 4;
+            this.cbCategory.TextChanged += new System.EventHandler(this.cbCategory_TextChanged);
             // 
             // cbIngredient
             // 
