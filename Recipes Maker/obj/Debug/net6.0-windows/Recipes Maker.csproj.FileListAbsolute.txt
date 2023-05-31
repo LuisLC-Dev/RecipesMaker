@@ -1,0 +1,23 @@
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\bin\Debug\net6.0-windows\Recipes Maker.exe
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\bin\Debug\net6.0-windows\Recipes Maker.deps.json
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\bin\Debug\net6.0-windows\Recipes Maker.runtimeconfig.json
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\bin\Debug\net6.0-windows\Recipes Maker.dll
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\bin\Debug\net6.0-windows\Recipes Maker.pdb
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes Maker.csproj.AssemblyReference.cache
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes_Maker.Properties.Resources.resources
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes Maker.csproj.GenerateResource.cache
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes Maker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes Maker.AssemblyInfoInputs.cache
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes Maker.AssemblyInfo.cs
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes Maker.csproj.CoreCompileInputs.cache
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes Maker.dll
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\refint\Recipes Maker.dll
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes Maker.pdb
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes Maker.genruntimeconfig.cache
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\ref\Recipes Maker.dll
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes_Maker.MainMenuFrm.resources
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes_Maker.Add_EditIngredient.resources
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes_Maker.EditIngredientsFrm.resources
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes_Maker.Make_EditRecipeFrm.resources
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes_Maker.RecipesList.resources
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes_Maker.ShowRecipe.resources
