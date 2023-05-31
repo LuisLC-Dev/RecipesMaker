@@ -30,11 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
             this.editButton = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,14 +56,15 @@
             this.dataGridView1.Size = new System.Drawing.Size(296, 298);
             this.dataGridView1.TabIndex = 7;
             // 
-            // button1
+            // addButton
             // 
-            this.button1.Location = new System.Drawing.Point(12, 45);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.addButton.Location = new System.Drawing.Point(12, 45);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(75, 23);
+            this.addButton.TabIndex = 8;
+            this.addButton.Text = "Agregar";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // editButton
             // 
@@ -76,43 +77,45 @@
             this.editButton.UseVisualStyleBackColor = true;
             this.editButton.Click += new System.EventHandler(this.editButton_Click);
             // 
-            // button3
+            // deleteButton
             // 
-            this.button3.Location = new System.Drawing.Point(233, 378);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.deleteButton.Location = new System.Drawing.Point(233, 378);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(75, 23);
+            this.deleteButton.TabIndex = 10;
+            this.deleteButton.Text = "Eliminar";
+            this.deleteButton.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // saveButton
             // 
-            this.button4.Location = new System.Drawing.Point(152, 441);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Guardar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.saveButton.Location = new System.Drawing.Point(152, 441);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 11;
+            this.saveButton.Text = "Guardar";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // button5
+            // cancelButton
             // 
-            this.button5.Location = new System.Drawing.Point(233, 441);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "Cancelar";
-            this.button5.UseVisualStyleBackColor = true;
+            this.cancelButton.Location = new System.Drawing.Point(233, 441);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.TabIndex = 12;
+            this.cancelButton.Text = "Cancelar";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // EditIngredientsFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(326, 481);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.editButton);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.addButton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "EditIngredientsFrm";
@@ -127,10 +130,10 @@
 
         private Label label1;
         private DataGridView dataGridView1;
-        private Button button1;
+        private Button addButton;
         private Button editButton;
-        private Button button3;
-        private Button button4;
-        private Button button5;
+        private Button deleteButton;
+        private Button saveButton;
+        private Button cancelButton;
     }
 }

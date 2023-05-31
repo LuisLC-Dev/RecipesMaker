@@ -1,0 +1,136 @@
+[
+    {
+        "name":"Agua",
+        "ingredients": [
+            {
+                "name":"Agua"
+            }
+        ]
+    },
+    {
+        "name":"Lacteos",
+        "ingredients": [
+            {
+                "name":"Leche"
+            },
+            {
+                "name":"Yogurth"
+            },
+            {
+                "name":"Crema"
+            },
+            {
+                "name":"Queso"
+            }
+        ]
+    },
+    {
+        "name":"Carne",
+        "ingredients": [
+            {
+                "name":"Carne de Res"
+            },
+            {
+                "name":"Carne de Pollo"
+            },
+            {
+                "name":"Carne de Cerdo"
+            },
+            {
+                "name":"Carne de Pescado"
+            }
+        ]
+    },
+    {
+        "name":"Verduras",
+        "ingredients": [
+            {
+                "name":"Papa"
+            },
+            {
+                "name":"Zanahoria"
+            },
+            {
+                "name":"Cebolla"
+            },
+            {
+                "name":"Jitomate"
+            },
+            {
+                "name":"Brócoli"
+            },
+            {
+                "name":"Pepino"
+            },
+            {
+                "name":"Lechuga"
+            }
+        ]
+    },
+    {
+        "name":"Frutas",
+        "ingredients": [
+            {
+                "name":"Manzana"
+            },
+            {
+                "name":"Pera"
+            },
+            {
+                "name":"Plátano"
+            },
+            {
+                "name":"Kiwi"
+            },
+            {
+                "name":"Guayaba"
+            },
+            {
+                "name":"Sandía"
+            },
+            {
+                "name":"Melón"
+            },
+            {
+                "name":"Papaya"
+            }
+        ]
+    },
+    {
+        "name":"Cereales",
+        "ingredients": [
+            {
+                "name":"Cebada"
+            },
+            {
+                "name":"Arroz"
+            },
+            {
+                "name":"Trigo"
+            },
+            {
+                "name":"Avena"
+            }
+        ]
+    },
+    {
+        "name":"Condimentos",
+        "ingredients": [
+            {
+                "name":"Sal"
+            },
+            {
+                "name":"Ajo"
+            },
+            {
+                "name":"Pimienta"
+            },
+            {
+                "name":"Comino"
+            },
+            {
+                "name":"Albahaca"
+            }
+        ]
+    }
+]

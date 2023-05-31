@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,7 @@ namespace Recipes_Maker
         public Add_EditIngredient()
         {
             InitializeComponent();
+            LoadCombos();
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
@@ -28,7 +30,7 @@ namespace Recipes_Maker
 
         private void accetpButton_Click(object sender, EventArgs e)
         {
-            if(cbIngredient.Text != null && nupQuantity.Value > 0)
+            if(cbIngredient.Text != "" && nupQuantity.Value > 0)
             {
                 this.response = true;
                 this.ingredient = new Ingredient(cbIngredient.Text);
@@ -38,6 +40,17 @@ namespace Recipes_Maker
             else
             {
                 MessageBox.Show("Por favor llena todos los campos");
+            }
+        }
+
+        private void LoadCombos()
+        {
+            MessageBox.Show(Environment.CurrentDirectory + "\\data\\categories.json");
+            string fileJson = File.ReadAllText(@Environment.CurrentDirectory + "\\data\\categories.json");
+            List<Category> categories = (List<Category>)JsonConvert.DeserializeObject(fileJson, typeof(List<Category>));
+            foreach(Category c in categories)
+            {
+                cbCategory.Items.Add(c.GetName());
             }
         }
 

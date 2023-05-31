@@ -21,3 +21,5 @@ C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\n
 C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes_Maker.Make_EditRecipeFrm.resources
 C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes_Maker.RecipesList.resources
 C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes_Maker.ShowRecipe.resources
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\PoshWhale\Desktop\Recipes Maker\Recipes Maker\Recipes Maker\obj\Debug\net6.0-windows\Recipes Maker.csproj.CopyComplete

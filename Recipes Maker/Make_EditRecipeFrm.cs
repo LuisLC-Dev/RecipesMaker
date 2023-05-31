@@ -12,18 +12,22 @@ namespace Recipes_Maker
 {
     public partial class Make_EditRecipeFrm : Form
     {
-        private Recipe Recipe;
+        private Recipe recipe;
         private bool response;
         public Make_EditRecipeFrm(Recipe newRecipe)
         {
             InitializeComponent();
-            this.Recipe = newRecipe;
+            this.recipe = newRecipe;
         }
 
         private void editIngredientsButton_Click(object sender, EventArgs e)
         {
             EditIngredientsFrm editIngredientsFrm = new EditIngredientsFrm();
             editIngredientsFrm.ShowDialog();
+            if (editIngredientsFrm.GetResponse())
+            {
+                recipe.SetIngredients(editIngredientsFrm.GetIngredients());
+            }
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
@@ -33,11 +37,18 @@ namespace Recipes_Maker
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            //falta validar que las tb no esten vacias
-            this.response = true;
-            this.Recipe.SetRecipeName(tbRecipeName.Text);
-            this.Recipe.SetRecipeDescription(tbDescription.Text);
-            this.Recipe.SetRecipeInstructions(tbInstructions.Text);
+            //falta validar que las tb no esten vacias y la lista de ingredientes tampoco
+            if(tbRecipeName.Text != "" && tbDescription.Text != "" && tbInstructions.Text != "" && recipe.GetIngredients().Count() > 0)
+            {
+                this.response = true;
+                this.recipe.SetRecipeName(tbRecipeName.Text);
+                this.recipe.SetRecipeDescription(tbDescription.Text);
+                this.recipe.SetRecipeInstructions(tbInstructions.Text);
+            }
+            else
+            {
+                MessageBox.Show("Por favor completa todos los campos");
+            }
         }
 
         #region Setters
@@ -47,7 +58,7 @@ namespace Recipes_Maker
         #region Getters
         public Recipe GetRecipe()
         {
-            return this.Recipe;
+            return this.recipe;
         }
 
         public bool GetResponse()

@@ -42,7 +42,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 26);
+            this.label1.Location = new System.Drawing.Point(24, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 15);
             this.label1.TabIndex = 0;
@@ -51,7 +51,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 70);
+            this.label2.Location = new System.Drawing.Point(27, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 15);
             this.label2.TabIndex = 1;
@@ -60,7 +60,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 116);
+            this.label3.Location = new System.Drawing.Point(27, 108);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 15);
             this.label3.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // nupQuantity
             // 
-            this.nupQuantity.Location = new System.Drawing.Point(28, 134);
+            this.nupQuantity.Location = new System.Drawing.Point(28, 126);
             this.nupQuantity.Name = "nupQuantity";
             this.nupQuantity.Size = new System.Drawing.Size(120, 23);
             this.nupQuantity.TabIndex = 3;
@@ -76,7 +76,7 @@
             // cbCategory
             // 
             this.cbCategory.FormattingEnabled = true;
-            this.cbCategory.Location = new System.Drawing.Point(27, 44);
+            this.cbCategory.Location = new System.Drawing.Point(27, 36);
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(121, 23);
             this.cbCategory.TabIndex = 4;
@@ -84,14 +84,14 @@
             // cbIngredient
             // 
             this.cbIngredient.FormattingEnabled = true;
-            this.cbIngredient.Location = new System.Drawing.Point(27, 90);
+            this.cbIngredient.Location = new System.Drawing.Point(27, 82);
             this.cbIngredient.Name = "cbIngredient";
             this.cbIngredient.Size = new System.Drawing.Size(121, 23);
             this.cbIngredient.TabIndex = 5;
             // 
             // accetpButton
             // 
-            this.accetpButton.Location = new System.Drawing.Point(12, 175);
+            this.accetpButton.Location = new System.Drawing.Point(12, 167);
             this.accetpButton.Name = "accetpButton";
             this.accetpButton.Size = new System.Drawing.Size(75, 23);
             this.accetpButton.TabIndex = 6;
@@ -101,7 +101,7 @@
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(93, 175);
+            this.cancelButton.Location = new System.Drawing.Point(93, 167);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 7;
@@ -113,7 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(185, 215);
+            this.ClientSize = new System.Drawing.Size(185, 202);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.accetpButton);
             this.Controls.Add(this.cbIngredient);
